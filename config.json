@@ -22,7 +22,4 @@
     "create": true,
     "loadingMessage": "Loading, please wait...1"
   },
-  "stats": {
-    "createHtml": true
-  }
 }
