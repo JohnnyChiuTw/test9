@@ -9,8 +9,7 @@
 </head>
 <body>
   <div id="loading" >
-    <img  src="Data/JsartoolkitNFT-logo.gif"/>
-    <span class="loading-text">Loading, please wait</span>
+    <span class="loading-text">Loading, please wait...2</span>
   </div>
   <!--
   ==================
@@ -42,8 +41,6 @@
 		<canvas id="canvas"></canvas>
 	</div>
   <script src="../dist/ARToolkitNFT.js"></script>
-  <script src="Data/js/third_party/three.js/stats.min.js"></script>
-  <script src="Data/js/third_party/three.js/three.min.js"></script>
   <script src="index.js"></script>
   <script src="threejs_worker_ES6.js"></script>
 
@@ -51,13 +48,6 @@
   /**
   * STATS
   */
-  var statsMain = new Stats();
-  statsMain.showPanel( 0 ); // 0: fps, 1: ms, 2: mb, 3+: custom
-  document.getElementById( 'stats1' ).appendChild( statsMain.dom );
-
-  var statsWorker = new Stats();
-  statsWorker.showPanel( 0 ); // 0: fps, 1: ms, 2: mb, 3+: custom
-  document.getElementById( 'stats2' ).appendChild( statsWorker.dom );
 
   window.addEventListener('load', () => {
     console.log('init ARToolkitNFT...');
@@ -82,7 +72,7 @@
   })
   .then(_ => {
 
-    start('../examples/DataNFT/pinball', video, video.videoWidth, video.videoHeight, function() { statsMain.update() }, function() { statsWorker.update() })
+    start('4smallnew', video, video.videoWidth, video.videoHeight, function() { statsMain.update() }, function() { statsWorker.update() })
 
     });
   })
