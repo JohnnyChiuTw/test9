@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>7</title>
+    <title>8</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=1">
     <link rel="stylesheet" href="css/nft-style.css">
 </head>
@@ -21,8 +21,8 @@
    
 
     <script>
-        ARnft.ARnft.init(640, 480, ["4smallnew"], ['pinball'], 'config.json', true)
-            .then((nft) => {
+        ARnft.ARnft.init(640, 480, ["4smallnew"], ['4smallnew'], 'config.json', true)
+            .then((nft) => {new
                 document.addEventListener('containerEvent', function (ev) {
 
                     let canvas = document.getElementById('canvas');
@@ -54,7 +54,7 @@
                     let nftAddTJS = new ARnftThreejs.NFTaddTJS(nft.uuid);
                     // Set width, height and width and height number of segments of the PlaneGeometry.
                     let imgConfig = {w: 1, h: 1, ws: 1, hs: 1};
-                    nftAddTJS.addVideo('arvideo', 'pinball', 180, imgConfig, false);
+                    nftAddTJS.addVideo('arvideo', '4smallnew', 180, imgConfig, false);
 
                     const tick = () => {
                         sceneThreejs.draw();
