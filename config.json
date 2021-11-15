@@ -20,10 +20,6 @@
   },
   "loading": {
     "create": true,
-    "logo": {
-      "src": "Data/arNFT-logo.gif",
-      "alt": "arNFT.js logo"
-    },
     "loadingMessage": "Loading, please wait...1"
   },
   "stats": {
